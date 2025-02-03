@@ -6,7 +6,7 @@ export default function Gallery() {
   const [showMore, setShowMore] = useState(false);
 
   function handleNextClick() {
-    setIndex(index + 1);
+    setIndex((prevIndex) => (prevIndex + 1) % sculptureList.length);  // 实现循环
   }
 
   function handleMoreClick() {
@@ -14,6 +14,12 @@ export default function Gallery() {
   }
 
   let sculpture = sculptureList[index];
+
+  // 如果 sculpture 为 undefined，则不渲染
+  if (!sculpture) {
+    return <p>No sculpture found.</p>;
+  }
+
   return (
     <>
       <button onClick={handleNextClick}>
