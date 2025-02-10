@@ -1,0 +1,72 @@
+.questionPageContainer {
+    padding: 2%;
+}
+
+/* ✅ 让 "All Questions" 标题加粗 */
+.bold_title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* ✅ "Ask a Question" 按钮 */
+.bluebtn {
+    background: #007bff;
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+.bluebtn:hover {
+    background: #0056b3;
+}
+
+/* ✅ **问题列表** */
+#question_list {
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+/* ✅ **每个问题行** */
+.question_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px dashed #ccc;
+    padding: 10px 0;
+}
+
+/* ✅ **问题标题调整** */
+.postTitle {
+    font-size: 16px;
+    font-weight: normal;
+    color: #0056b3;
+    transition: color 0.2s;
+}
+
+.postTitle:hover {
+    color: #004080;
+}
+
+/* ✅ **发布者 + 提问时间** */
+.lastActivity {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 12px;
+    color: gray;
+    white-space: nowrap;
+    gap: 5px;
+}
+
+/* ✅ **发布者名字** */
+.question_author {
+    font-size: 14px;
+    font-weight: normal;
+    color: red;
+}
+
+

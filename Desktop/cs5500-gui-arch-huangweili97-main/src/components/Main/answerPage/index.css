@@ -1,0 +1,65 @@
+.answer-page {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* ✅ 问题标题 & 按钮 */
+#answersHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.answer-count {
+    font-size: 20px;
+}
+
+.question-title {
+    font-size: 22px;
+}
+
+.ask-button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* ✅ 问题详情 */
+#questionBody {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed #ccc;
+    padding: 10px 0;
+}
+
+.view-count {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.question-text {
+    flex-grow: 1;
+    font-size: 16px;
+}
+
+.question-author {
+    font-size: 14px;
+    color: red;
+}
+
+/* ✅ 每个答案 */
+.answer {
+    border-bottom: 1px dashed #ccc;
+    padding: 10px 0;
+}
+
+.answer-meta {
+    font-size: 14px;
+    color: gray;
+}

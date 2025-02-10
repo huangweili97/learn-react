@@ -1,0 +1,19 @@
+.questionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 2%;
+}
+
+.bluebtn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bluebtn:hover {
+    background: #0056b3;
+}

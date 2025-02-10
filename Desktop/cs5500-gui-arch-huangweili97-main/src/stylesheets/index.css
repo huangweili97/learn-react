@@ -1,0 +1,61 @@
+/* ✅ 让 `main-container` 充满整个屏幕 */
+#main-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* ✅ 侧边栏样式 */
+.sideBarNav {
+    display: flex;
+    flex-direction: column;  /* ✅ 强制子元素垂直排列 */
+    width: 180px;  /* ✅ 侧边栏宽度 */
+    height: 100vh;  /* ✅ 让侧边栏充满整个高度 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #e0e0e0;  /* ✅ 侧边栏浅灰色 */
+    padding-top: 20px;
+    align-items: center;  /* ✅ 让按钮水平居中 */
+    border-right: 2px solid #bfbfbf;  /* ✅ 添加右侧边框 */
+}
+
+/* ✅ 侧边栏按钮样式 */
+.menu_button {
+    width: 80%;  /* ✅ 让按钮占满 80% 的侧边栏宽度 */
+    height: 50px;  /* ✅ 让按钮高度一致 */
+    margin: 10px 0;  /* ✅ 间距调整 */
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0044cc;
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;  /* ✅ 强制按钮占满整行，避免变成 inline */
+}
+
+/* ✅ 选中时的按钮样式 */
+.menu_selected {
+    background-color: #0044cc;
+    border: 1px solid black;
+    color: white;
+}
+
+/* ✅ 鼠标悬停样式 */
+.menu_button:hover {
+    background-color: #d6d6d6;
+    border: 1px solid black;
+}
+
+/* ✅ 让主页面从侧边栏右侧开始 */
+.right_main {
+    flex-grow: 1;
+    margin-left: 180px;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+
